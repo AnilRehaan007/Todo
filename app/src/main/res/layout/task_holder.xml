@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/taskshowcorners">
+
+                    <TextView
+                        android:id="@+id/task_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="90dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="1dp"
+                        android:textColor="@color/dark_orange"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:text="doctor" />
+
+                    <TextView
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/task_name"
+                        android:layout_alignEnd="@+id/task_name"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginEnd="0dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="1dp"
+                        android:textColor="@color/light_brown"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        tools:text="i need" />
+
+                    <TextView
+                        android:id="@+id/date_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/description"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="1dp"
+                        android:textColor="@color/purple"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        tools:text="12-04-2020" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="7dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/task_name"
+                        android:layout_alignBottom="@+id/date_setting"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/circular" />
+
+                    <ImageButton
+                        android:id="@+id/edit_task"
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/editanddelete"
+                        android:contentDescription="@string/logo"
+                        android:scaleType="center"
+                        android:src="@android:drawable/ic_menu_edit" />
+
+                    <ImageButton
+                        android:id="@+id/delete_task"
+                        android:layout_width="47dp"
+                        android:layout_height="47dp"
+                        android:layout_below="@+id/edit_task"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/editanddelete"
+                        android:contentDescription="@string/logo"
+                        android:scaleType="center"
+                        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

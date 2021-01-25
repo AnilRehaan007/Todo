@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="sign_up">SignUp Your Profile</string>
+    <string name="logo">logo</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="picture">picture</string>
+    <string name="camera">camera</string>
+    <string name="name" />
+    <string name="hint">Your Name</string>
+    <string name="done">DONE</string>
+    <string name="myContent">content</string>
+    <string name="unknown">unknown</string>
+    <string name="tasks">You Have 0 Tasks To Do</string>
+    <string name="date">12-06-2020</string>
+    <string name="today">Today</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="addTask">Tab To Add Task</string>
+    <string name="title_activity_task_edit">TaskEdit</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string name="hint1">Task Name</string>
+    <string name="hint2">Description</string>
+    <string name="dateChooser">Select Date</string>
+    <string name="time">Select Time</string>
+    <string name="save">Data Saved</string>
+    <string name="pickdate">Select Task Date</string>
+    <string name="deleteinformation">[ TASK INFORMATION ]</string>
+    <string name="taskname">Task :</string>
+    <string name="description">Brief :</string>
+    <string name="time_date">Time :</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="delete1">Task Deleted</string>
+    <string name="choose">Setting Options</string>
+    <string name="edit">Edit Profile</string>
+    <string name="clear">Clear Data</string>
+    <string name="format">Delete Account</string>
+    <string name="update">Update</string>
+    <string name="updatehint">Enter Your Name</string>
+    <string name="clear1">Clear</string>
+    <string name="information">Clear All Data</string>
+    <string name="info">THIS OPERATION WILL</string>
+    <string name="info1">DELETE ALL SAVED TASKS</string>
+    <string name="finalization">Data Cleared</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="info2">DELETE ENTIRE ACCOUNT</string>
+    <string name="delete2">Delete</string>
+    <string name="final_call">Account Deleted</string>
+
+</resources>

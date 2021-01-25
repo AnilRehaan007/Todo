@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/deletepopupbackground">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="@string/deleteinformation"
+                android:textColor="@color/purple_700"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/taskname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/taskname"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descriptionname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/taskname"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionname"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/time_date"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/taskname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/descriptionname"
+                android:layout_below="@id/textView2"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/taskname"
+                android:paddingStart="5dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/light_black"
+                android:textSize="24sp"
+                tools:text="my task" />
+
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/timename"
+                android:layout_below="@id/taskname1"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/descriptionname"
+                android:paddingStart="5dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/light_black"
+                android:textSize="24sp"
+                tools:text="i want to go" />
+
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description1"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/timename"
+                android:paddingStart="5dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/design_default_color_error"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="23-12-2020" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/profile_edit_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/delete_my_task" />
+
+        <Button
+            android:id="@+id/account_delete_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="94dp"
+            android:background="@drawable/deletebutton"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/minimize2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cancel" />
+
+    </RelativeLayout>
+</RelativeLayout>

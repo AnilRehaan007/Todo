@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/back3"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="333dp"
+        android:layout_height="489dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="107dp"
+            android:layout_height="151dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginEnd="193dp"
+            android:layout_marginBottom="311dp"
+            android:text="@string/Sign_Up"
+            android:textColor="@color/light_white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/user_selected_image"
+            android:layout_width="106dp"
+            android:layout_height="119dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="345dp"
+            android:background="@drawable/graphics_picture"
+            android:contentDescription="@string/picture"
+            android:paddingBottom="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="69dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="329dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/camera"
+            app:srcCompat="@drawable/canera" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="242dp"
+            android:layout_height="59dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="210dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="@string/hint"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/go"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="26dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/go1" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

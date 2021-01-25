@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/deletepopupbackground">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="@string/choose"
+                android:textColor="@color/purple_700"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/profile_editing"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/logo"
+                app:srcCompat="@drawable/edit_profile" />
+
+            <ImageView
+                android:id="@+id/clear_data"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/profile_editing"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/logo"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/clear_data" />
+
+            <ImageView
+                android:id="@+id/account_delete"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/clear_data"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/logo"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/delete_task" />
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@id/profile_editing"
+                android:background="@drawable/rounder"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/edit"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_button"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/clear_data"
+                android:background="@drawable/rounder"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/clear"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/delete_account_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clear_button"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_toEndOf="@id/account_delete"
+                android:background="@drawable/rounder"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/format"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/profile_edit_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/touch_edit" />
+
+        <ImageView
+            android:id="@+id/minimize2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="2dp"
+            android:contentDescription="@string/logo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cancel" />
+
+    </RelativeLayout>
+</RelativeLayout>

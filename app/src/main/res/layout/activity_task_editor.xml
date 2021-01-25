@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/waves"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:paddingStart="70dp"
+        android:paddingEnd="1dp"
+        android:text="@string/date"
+        android:textColor="@color/light_brown"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintEnd_toStartOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toTopOf="@+id/view6"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/circular"
+        app:layout_constraintBottom_toBottomOf="@+id/view6"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintTop_toTopOf="@+id/date"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="80dp"
+        app:cardBackgroundColor="@color/light_white"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardviewcorners">
+
+            <EditText
+                android:id="@+id/enter_task3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/task_recorder"
+                android:autofillHints=""
+                android:backgroundTint="@color/purple"
+                android:ems="10"
+                android:hint="@string/hint1"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/dark_orange"
+                android:textColorHint="@color/grey"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/task_recorder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/logo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/voice_recognition" />
+
+            <ImageView
+                android:id="@+id/description_recorder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/task_recorder"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="39dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="@string/logo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/voice_recognition" />
+
+            <EditText
+                android:id="@+id/enter_description3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enter_task3"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/description_recorder"
+                android:autofillHints=""
+                android:backgroundTint="@color/purple"
+                android:ems="10"
+                android:hint="@string/hint2"
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp"
+                android:textColor="@color/grey"
+                android:textColorHint="@color/grey"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/simpleText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/enter_description3"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp"
+                android:text="@string/dateChooser"
+                android:textColor="@color/selected_picker"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/datePicker"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_above="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:background="@color/light_white"
+                android:contentDescription="@string/logo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/calendar1" />
+
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="380dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="11dp"
+                android:background="@color/light_white"
+                android:contentDescription="@string/logo"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/save" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="86dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="1dp"
+                android:text="@string/time"
+                android:textColor="@color/selected_picker"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/timePicker"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="13dp"
+                android:background="@color/light_white"
+                android:contentDescription="@string/logo"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/watch" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:background="@drawable/ic_wave__5_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="@+id/view16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

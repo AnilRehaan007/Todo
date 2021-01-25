@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="dialog_animation" parent="Theme.AppCompat.Light">
+
+        <item name="android:windowAnimationStyle">@style/animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>
