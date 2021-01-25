@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements Profile.CallbackP
     public static String callBackFromWhere="empty";
     public static boolean editorCaller=false;
     public static boolean startService=false;
+    public static final String demo="demo";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
